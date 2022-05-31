@@ -27,7 +27,7 @@ const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   ...theme.typography.body2,
   textAlign: 'center',
-  height: '86vh',
+  height: '80vh',
   color: theme.palette.text.secondary,
 }));
 
@@ -42,32 +42,32 @@ export default function AdminDashboard() {
   const classes = useStyles();
   return (
     <>
-      <Grid container spacing={0}>
-        <Grid item xs sx={{paddingRight:'10px'}} >
-          <List  component="nav" aria-label="mailbox folders">
-            <ListItem sx={{ background: '#891dc0!important',marginLeft:'auto',width:'50%',borderRadius:'5px' }} button>
-            
-              <ListItemText sx={{ height: '35px' }}  />
+      <Grid container spacing={0} >
+        <Grid item xs sx={{ paddingRight: '10px',paddingTop:'42px' }} >
+          <List component="nav" aria-label="mailbox folders">
+            <ListItem sx={{ background: '#891dc0!important', marginLeft: 'auto', width: '50%', borderRadius: '5px' }} button>
+
+              <ListItemText sx={{ height: '35px' }} />
             </ListItem>
 
-            <ListItem button  sx={{marginLeft:'auto',width:'50%',display:'flex',flexDirection:'column'}}>
-              <EqualizerIcon/>
-              <Typography sx={{fontSize:'0.64rem!important'}}  >Event</Typography>
+            <ListItem button sx={{ marginLeft: 'auto', width: '50%', display: 'flex', flexDirection: 'column' }}>
+              <EqualizerIcon />
+              <Typography sx={{ fontSize: '0.64rem!important' }}  >Event</Typography>
             </ListItem>
-            <ListItem button  sx={{marginLeft:'auto',width:'50%',display:'flex',flexDirection:'column'}}>
-              <GroupsIcon/>
-            <Typography sx={{fontSize:'0.64rem!important'}}  >Teams</Typography>
-              
+            <ListItem button sx={{ marginLeft: 'auto', width: '50%', display: 'flex', flexDirection: 'column' }}>
+              <GroupsIcon />
+              <Typography sx={{ fontSize: '0.64rem!important' }}  >Teams</Typography>
+
             </ListItem>
-            <ListItem button  sx={{marginLeft:'auto',width:'50%',display:'flex',flexDirection:'column'}}>
-              <InsightsIcon/>
-            <Typography sx={{fontSize:'0.64rem!important'}}  >Analytics</Typography>
-              
+            <ListItem button sx={{ marginLeft: 'auto', width: '50%', display: 'flex', flexDirection: 'column' }}>
+              <InsightsIcon />
+              <Typography sx={{ fontSize: '0.64rem!important' }}  >Analytics</Typography>
+
             </ListItem>
-            <ListItem button  sx={{marginLeft:'auto',width:'50%',display:'flex',flexDirection:'column'}} >
-              <DraftsIcon/> 
-            <Typography sx={{fontSize:'0.64rem!important'}}  >Results</Typography>
-              
+            <ListItem button sx={{ marginLeft: 'auto', width: '50%', display: 'flex', flexDirection: 'column' }} >
+              <DraftsIcon />
+              <Typography sx={{ fontSize: '0.64rem!important' }}  >Results</Typography>
+
             </ListItem>
           </List>
         </Grid>
@@ -76,12 +76,12 @@ export default function AdminDashboard() {
           <MainBox />
           <ChatBox />
         </Grid>
-        <Grid item xs sx={{ display: 'flex', flexDirection: 'column' }} >
-          <Box sx={{ paddingLeft:'10px',display: 'flex', justifyContent: 'center', flexDirection: 'column', paddingTop: '25px' }} >
-            <Avatar alt="Remy Sharp" sx={{ border: '1px solid white', borderRadius: '12px', marginBottom: '1px', }} src="/static/images/avatar/1.jpg" />
-            <CircleNotificationsIcon sx={{ color: 'rgba(0, 0, 0, 0.6); ', fontSize: '1.2rem', paddingLeft: '10px', marginBottom: '11px',paddingTop: '8px!important' }} />
-            <ForumIcon sx={{ color: 'rgba(0, 0, 0, 0.6); ', fontSize: '1.2rem', paddingLeft: '10px', marginBottom: '12px',paddingTop: '2px !important' }} />
-            <SettingsIcon sx={{ color: 'rgba(0, 0, 0, 0.6);', fontSize: '1.2rem', paddingLeft: '10px',paddingTop: '2px!important' }} />
+        <Grid item xs sx={{ display: 'flex', flexDirection: 'column',paddingTop:'40px' }} >
+          <Box sx={{ paddingLeft: '10px', display: 'flex', justifyContent: 'center', flexDirection: 'column', paddingTop: '25px' }} >
+            <Avatar alt="Remy Sharp" sx={{width:'24% !important',height:'35% !important', border: '1px solid white', borderRadius: '10px', marginBottom: '1px', }} src="/static/images/avatar/1.jpg" />
+            <CircleNotificationsIcon sx={{ color: 'rgba(0, 0, 0, 0.6); ', fontSize: '1.2rem', paddingLeft: '10px', marginBottom: '11px', paddingTop: '8px!important' }} />
+            <ForumIcon sx={{ color: 'rgba(0, 0, 0, 0.6); ', fontSize: '1.2rem', paddingLeft: '10px', marginBottom: '12px', paddingTop: '2px !important' }} />
+            <SettingsIcon sx={{ color: 'rgba(0, 0, 0, 0.6);', fontSize: '1.2rem', paddingLeft: '10px', paddingTop: '2px!important' }} />
           </Box>
         </Grid>
       </Grid>

@@ -19,7 +19,7 @@ const useStyles = makeStyles({
       fontWeight:'bold',
       boxShadow:' 0px 15px 10px -15px #ddd9d9 !important',
       border:'2px solid white !important',
-      
+      paddingTop:'20px'
       
   }
   })

@@ -54,7 +54,7 @@ function a11yProps(index) {
 
 const useStyles = makeStyles({
     root: {
-        height: '65vh',
+        height: '60vh',
         display: 'flex',
         padding: '0px 12px !important',
         paddingBottom: '5px !important'
