@@ -116,7 +116,7 @@ export default function ChatBox() {
             </Box >
             <Card sx={{ width: '100%', borderRadius: '0px 12px 12px 0px' }}>
                 <Box sx={{ display: 'flex', flexDirection: 'row' }}>
-                    <Typography sx={{ display: 'flex', width: '100%', color: '#891dc0!important', fontWeight: '900 !important' }} className={classes.typo}>Virtual/hybrid Center   <CancelOutlinedIcon sx={{ display: 'flex', margin: 'auto 12px auto auto' }} /> </Typography>
+                    <Typography sx={{ display: 'flex', width: '100%', color: '#891dc0!important',fontSize:'1rem !important',fontWeight:'900 !important' }} className={classes.typo}>Virtual/hybrid Center   <CancelOutlinedIcon sx={{ display: 'flex', margin: 'auto 12px auto auto' }} /> </Typography>
 
                 </Box>
                 <CardContent>

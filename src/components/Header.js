@@ -1,3 +1,5 @@
+
+import Fab from '@mui/material/Fab';
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -12,17 +14,17 @@ import { fontWeight } from '@mui/system';
 
 const useStyles = makeStyles({
     root: {
-      background: 'white !important',
-      color:'black',
-      paddingRight:'unset!important',
-      paddingLeft:'unset!important',
-      fontWeight:'bold',
-      boxShadow:' 0px 15px 10px -15px #ddd9d9 !important',
-      border:'2px solid white !important',
-      paddingTop:'20px'
-      
-  }
-  })
+        background: 'white !important',
+        color: 'black',
+        paddingRight: 'unset!important',
+        paddingLeft: 'unset!important',
+        fontWeight: 'bold',
+        boxShadow: ' 0px 15px 10px -15px #ddd9d9 !important',
+        border: '2px solid white !important',
+        paddingTop: '20px'
+
+    }
+})
 
 export default function Header() {
     const classes = useStyles()
@@ -39,10 +41,13 @@ export default function Header() {
                     >
                         <SortIcon />
                     </IconButton>
-                    
-                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 ,fontWeight:'900'}}>
+
+                    <Typography variant="h6" component="div" sx={{ flexGrow: 1, fontWeight: '900' }}>
                         Admin Dashboard
                     </Typography>
+                    <Fab variant="extended" sx={{boxShadow:'unset !important' ,borderRadius:'2px !important',height:'6vh !important ',backgroundColor:'white !important',border:'1px solid grey'}}>
+                        Preview on:
+                    </Fab>
                 </Toolbar>
             </AppBar>
         </Box>
