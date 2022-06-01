@@ -46,10 +46,10 @@ export default function Header() {
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1, fontWeight: '900' }}>
                         Admin Dashboard
                     </Typography>
-                    <Fab variant="extended" sx={{textTransform: 'initial !important',boxShadow:'unset !important' ,borderRadius:'2px !important',height:'5vh !important ',backgroundColor:'white !important',border:'1px solid #bba7a7'}} >
+                    <Fab variant="extended" sx={{ textTransform: 'initial !important', boxShadow: 'unset !important', borderRadius: '2px !important', height: '5vh !important ', backgroundColor: 'white !important', border: '1px solid #bba7a7' }} >
                         Preview on:
-                    <PhoneAndroidIcon/>
-                    <LaptopIcon/>
+                        <PhoneAndroidIcon sx={{ width: '26px !important', height: '14px !important', color: '#817474 !important' }} />
+                        <LaptopIcon sx={{ width: '26px !important', height: '14px !important', color: '#817474 !important' }} />
                     </Fab>
                 </Toolbar>
             </AppBar>
