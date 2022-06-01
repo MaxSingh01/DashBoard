@@ -1,4 +1,5 @@
-
+import LaptopIcon from '@mui/icons-material/Laptop';
+import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 import Fab from '@mui/material/Fab';
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
@@ -45,8 +46,10 @@ export default function Header() {
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1, fontWeight: '900' }}>
                         Admin Dashboard
                     </Typography>
-                    <Fab variant="extended" sx={{boxShadow:'unset !important' ,borderRadius:'2px !important',height:'6vh !important ',backgroundColor:'white !important',border:'1px solid grey'}}>
+                    <Fab variant="extended" sx={{textTransform: 'initial !important',boxShadow:'unset !important' ,borderRadius:'2px !important',height:'5vh !important ',backgroundColor:'white !important',border:'1px solid #bba7a7'}} >
                         Preview on:
+                    <PhoneAndroidIcon/>
+                    <LaptopIcon/>
                     </Fab>
                 </Toolbar>
             </AppBar>
